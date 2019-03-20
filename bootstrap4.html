@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap4 example</title>
+        <link rel="stylesheet" href="boot.css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+        <script>
+                $('.nav li a').on('click',function(event){
+                   event.preventDefault();
+                   var target =$(this).attr('href');
+                   var offsetTop = $(target).offset()top;
+                   $('html,body').animate({
+                       scrollTop:offsetTop},1000);
+                }) 
+                  </script>
+        
+    </head>
+
+    <body>
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tovnav">
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="tovnav">
+            <ul class=" nav navbar-nav ml-auto">
+                <li><a href="#Home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#products" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="section">
+<div class="container">
+<div class="jumbotron">
+<h1>Products</h1>
+<p>He is the co-founder of Neil Patel Digital. 
+    The Wall Street Journal calls him a top influencer on the web,
+     Forbes says he is one of the top 10 marketers, 
+     and Entrepreneur Magazine says he created one of the 100 most brilliant companies.
+      Neil is a New York Times bestselling author and was recognized as a top 100 entrepreneur
+       under the age of 30 by President Obama and a top 100 entrepreneur
+     under the age of 35 by the United Nations.<a href="#about" class="btn btn-primary">Learn More about Us</a> </p>
+
+</div>
+</div>
+ </header>
+
+ <section class="section" id="Home">
+     <div class="container">
+         <div class="row">
+             <div class="col">
+                 
+                 <div class="h1 text-danger">Welcome to Hello Kids School</h2></div>
+                    <p class="school">Whatever kind of school you go to, the main reason for being there is to learn.
+
+                            You need to learn to be able to live the best life that you can.</p>
+                    </div>
+                      <div class="col "> <img src="img/6.jpg" id="colimg"float-left > </div>
+                      </div>
+                  </div>
+ </section>
+
+ <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col bg-info">
+                    
+                    <div class="h2">Welcome to our Website</h2></div>
+                       <p>He is the co-founder of Neil Patel Digital. The Wall Street
+                            Journal calls him a top influencer on the web, Forbes says he 
+                            is one of the top 10 marketers, and Entrepreneur Magazine says he 
+                            created one of the 100 most brilliant companies. Neil is a New York
+                             Times bestselling author and was recognized as a top 100 entrepreneur under 
+                             the age of 30 by President Obama and a top 100 
+                           entrepreneur under the age of 35 by the United Nations.</p>
+   
+                       </div>
+                       <div class="col bg-danger">  </div>
+                       <div class="col bg-success"> <img src="img/9.jpg" id="colimg"> </div>
+            </div>
+            <div class="row">
+                    <div class="col">
+                            <p>He is the co-founder of Neil Patel Digital. The Wall Street
+                                    Journal calls him a top influencer on the web, Forbes says he 
+                                    is one of the top 10 marketers, and Entrepreneur Magazine says he 
+                                    created one of the 100 most brilliant companies. Neil is a New York
+                                     Times bestselling author and was recognized as a top 100 entrepreneur under 
+                                     the age of 30 by President Obama and a top 100 
+                                   entrepreneur under the age of 35 by the United Nations.</p>
+                    </div>
+                </div>
+            </div>
+            
+    </section>
+
+    <section class="section" id="products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card">
+                             <div class="card-header" >Featured</div>
+                             <img class="card-img-top"src="img/9.jpg">
+                            <div class="card-body">
+                                <div class="card-title">Product 1</div>
+                                <div class="card-text">He is the co-founder of Neil Patel Digital. The Wall Street
+                                        Journal calls him a top influ</div>
+                                        <a href="#" class="btn btn-primary">Buy#1</a>
+                            </div>
+                        </div>
+                      </div> 
+
+                      <div class="col-sm-6 col-lg-4">
+                            <div class="card">
+                                 <div class="card-header" >Featured</div>
+                                 <img class="card-img-top"src="img/6.jpg">
+                                <div class="card-body">
+                                    <div class="card-title">Product 2</div>
+                                    <div class="card-text">He is the co-founder of Neil Patel Digital. The Wall Street
+                                            Journal calls him a top influ</div>
+                                            <a href="#" class="btn btn-primary">Buy#2</a>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-6 col-lg-4">
+                                <div class="card">
+                                     <div class="card-header" >Featured</div>
+                                     <img class="card-img-top"src="img/7.jpg">
+                                    <div class="card-body">
+                                        <div class="card-title">Product 3</div>
+                                        <div class="card-text">He is the co-founder of Neil Patel Digital. The Wall Street
+                                                Journal calls him a top influ</div>
+                                                <a href="#" class="btn btn-primary">Buy#3</a>
+                                    </div>
+                                </div>  
+                              </div>
+
+                              <div class="col-sm-6 col-lg-4">
+                                    <div class="card">
+                                         <div class="card-header" >Featured</div>
+                                         <img class="card-img-top"src="img/8.jpg">
+                                        <div class="card-body">
+                                            <div class="card-title">Product 4</div>
+                                            <div class="card-text">He is the co-founder of Neil Patel Digital. The Wall Street
+                                                    Journal calls him a top influ</div>
+                                                    <a href="#" class="btn btn-primary">Buy#4</a>
+                                        </div>
+                                    </div>  
+                                  </div>
+                         
+                </div>
+                </div>
+        </section>
+
+        <section class="section" id="contact">
+                <div class="container">
+                    <form>
+                     <div class="form-group">
+                         <label for="Fulname" class="col-sm-2 col-form-lable">Full Name</label> 
+                         <div class="col-sm-10">
+                             <input type="text" class="form-control" id="fullname" placeholder="Full Name">
+                         </div>
+                     </div>  
+                     <div class="form-group">
+                            <label for="Fulname" class="col-sm-2 col-form-lable">E-mail</label> 
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="E-mail">
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                                <label for="Fulname" class="col-sm-2 col-form-lable">Mobile</label> 
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="Mobile" placeholder="Mobile Number">
+                                </div>
+                            </div>
+                        <div class="form-group">
+                                <label for="Fulname" class="col-sm-2 col-form-lable">Message</label> 
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" id="Message" rows="8"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message </button> 
+
+                    </form>
+                </div>
+                   
+                          
+            </section>
+            <footer class="bg-dark">
+                <div class="container">
+                   <div class="text-center text-light p-3"> Copyright (c) Company contact address</div>
+                </div>
+            </footer>
+
+
+    
+    </body>
+    </html>

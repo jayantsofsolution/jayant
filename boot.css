@@ -1,0 +1,39 @@
+.section{
+    min-height: 1000px;
+    overflow: hidden;
+    position: relative;
+    padding: 90px 10px 0px;
+   
+    
+}
+.section:nth-child(even){
+    background-color: aqua;
+    
+}
+#Home{
+    background:url(img/9.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+#about{
+    background:url(img/1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+#Home > div,
+#about > div
+{
+    background-color:rgba(241, 241, 235, 0.5);
+    border-radius: 20px;
+}
+#contact > div{
+background-color: white;
+border-radius: 10px;
+padding: 20px;
+}
+#colimg{
+    width: 500px;
+    height: 300px;
+}
+.school{
+    font-size: 30px;
+}
